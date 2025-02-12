@@ -1,6 +1,9 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #faadf6;
+    background-image: url(clouds.avif);
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +11,12 @@ body {
     margin: 0;
 }
 
+h1 {
+    color: #1c418c;
+}
+
 .container {
-    background-color: #ac1f9d;
+    background-color: #87c8ff;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(64, 3, 60, 0.1);
@@ -21,7 +28,7 @@ input {
     margin: 10px auto;
     padding: 10px;
     width: 48%;
-    border: 1px solid #f67cee;
+    border: 4px solid #378ffa;
     border-radius: 15px;
 }
 
@@ -29,17 +36,19 @@ button {
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
-    background-color: #f67cee;
-    color: #4c0642;
+    background-color: #5db0fd;
+    color: #162855;
+    border: #378ffa solid 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #5e1754;
-    color: #eb4ae0;
+    background-color: #162855;
+    color: #bee0ff;
     pointer-events: painted;
 }
 
 p {
     margin: 10px 0;
+    color: #162855;
 }
