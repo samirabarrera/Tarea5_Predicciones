@@ -3,17 +3,12 @@ function weatherCurrently() {
     let userName = document.getElementById('userName').value;
     let userQuestion = document.getElementById('weatherCondition').value;
 
-    // Saludar al usuario
     let greeting = userName ? `¡Hola, ${userName}!` : '¡Hola!';
     document.getElementById('greeting').innerText = greeting;
 
-    // Mostrar la pregunta del usuario
-    document.getElementById('question').innerText = `${userName ? userName : 'User'} preguntó: ${userQuestion}`;
+    document.getElementById('question').innerText = `${userName ? userName : 'User'} ingresó el número: ${userQuestion}`;
 
-    // Generar un número aleatorio entre 0 y 7
     let randomNumber = Math.floor(Math.random() * 6);
-
-    // Asignar una respuesta a randomPrediction según el valor de randomNumber
     let randomPrediction = '';
     switch (randomNumber) {
         case 0:
